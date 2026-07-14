@@ -15,10 +15,10 @@ router.get("/", getAllProperties);
 
 router.get("/:id", getPropertyById);
 
-router.post("/", protect, addProperty);
+router.post("/", addProperty);
 
-router.put("/:id", protect, updateProperty);
+router.put("/:id", updateProperty);
 
-router.delete("/:id", protect, deleteProperty);
+router.delete("/:id", deleteProperty);
 
 module.exports = router;
